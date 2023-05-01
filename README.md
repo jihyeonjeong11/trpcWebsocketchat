@@ -87,3 +87,7 @@ gotta rip livechatt3 and move them to this one.
 use nvm use 18.15.0
 
 set @prisma/client and prisma version identical. 4.12.0
+
+05/01
+
+changed devdependency prisma moved to dependency for production deployment
