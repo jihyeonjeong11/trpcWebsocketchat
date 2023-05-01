@@ -56,10 +56,7 @@ const isAuthed = middleware(({ next, ctx }) => {
 
   return next({
     ctx: {
-      user: {
-        ...user,
-        name: user.name,
-      },
+      session: { ...ctx.session, user: ctx.session?.user },
     },
   });
 });

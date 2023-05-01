@@ -77,3 +77,13 @@ pnpm test:e2e   # runs e2e tests
 ---
 
 Created by [@alexdotjs](https://twitter.com/alexdotjs).
+
+04/30
+
+let's start from beginning.
+
+gotta rip livechatt3 and move them to this one.
+
+use nvm use 18.15.0
+
+set @prisma/client and prisma version identical. 4.12.0

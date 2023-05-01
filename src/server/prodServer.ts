@@ -27,6 +27,8 @@ void app.prepare().then(() => {
     void handle(req, res, parsedUrl);
   });
   const wss = new ws.Server({ server });
+  // tslint:disable-next-line:no-console
+  console.log('eee');
   const handler = applyWSSHandler({ wss, router: appRouter, createContext });
 
   process.on('SIGTERM', () => {
@@ -37,8 +39,10 @@ void app.prepare().then(() => {
 
   // tslint:disable-next-line:no-console
   console.log(
-    `> Server listening at http://localhost:${port} as ${
+    `> Server123s listening at http://localhost:${port} as ${
       dev ? 'development' : process.env.NODE_ENV
     }`,
+    wss,
+    'eee',
   );
 });
