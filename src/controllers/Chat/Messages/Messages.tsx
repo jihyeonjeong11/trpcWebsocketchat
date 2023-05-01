@@ -6,7 +6,14 @@ import MessageHeader from './MessageHeader/MessageHeader';
 import MessageSection from './MessageSection/MessageSection';
 import NewConversationUserInput from './NewConversationUserInput/NewConversationUserInput';
 
-import { User } from '@prisma/client';
+// import { User } from '@prisma/client';
+
+export interface User {
+  id: string;
+  username: string;
+  image: string;
+  name: string;
+}
 
 export interface MessagesState {
   addToConvoQueue: (conversationId: string, recipient: Partial<User>) => void;
