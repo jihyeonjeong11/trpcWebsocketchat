@@ -4,7 +4,6 @@ import Messages from './Messages/Messages';
 import type { Dispatch, SetStateAction } from 'react';
 import IconButton from '../../components/IconButton/IconButton';
 import { IoChatboxOutline } from 'react-icons/io5';
-import { User } from '@prisma/client';
 import { trpc } from '../../utils/trpc';
 
 // export interface User {
