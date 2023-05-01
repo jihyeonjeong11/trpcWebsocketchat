@@ -6,7 +6,7 @@ import MessageHeader from './MessageHeader/MessageHeader';
 import MessageSection from './MessageSection/MessageSection';
 import NewConversationUserInput from './NewConversationUserInput/NewConversationUserInput';
 
-import { User } from '@prisma/client';
+import { User } from '../../../generated/client';
 
 export interface MessagesState {
   addToConvoQueue: (conversationId: string, recipient: Partial<User>) => void;
