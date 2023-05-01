@@ -6,9 +6,9 @@ services:
     env: node
     plan: free
     # NODE_ENV is development here in order for pnpm to install dev deps
-    buildCommand: NODE_ENV=development pnpm install && pnpm build
+    buildCommand: prisma generate NODE_ENV=development pnpm install && pnpm build
     startCommand: pnpm start
-    healthCheckPath: /api/trpc/healthcheck
+    # healthCheckPath: /api/trpc/healthcheck
     # Preview Environment Initialization
     # initialDeployHook: |
     #   pnpm run db-seed
