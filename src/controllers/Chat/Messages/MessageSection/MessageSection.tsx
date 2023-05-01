@@ -1,4 +1,4 @@
-import type { Message } from '@prisma/client';
+import type { Message } from '../../../../generated/client';
 import { trpc } from '../../../../utils/trpc';
 import type { ChatState } from '../../Chat';
 import { useEffect, useRef } from 'react';

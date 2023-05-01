@@ -1,6 +1,6 @@
 import { IoAddOutline, IoChevronBack } from 'react-icons/io5';
 import IconButton from '../../../components/IconButton/IconButton';
-import type { User } from '@prisma/client';
+import type { User } from '../../../generated/client';
 import { trpc } from '../../../utils/trpc';
 
 // db composition

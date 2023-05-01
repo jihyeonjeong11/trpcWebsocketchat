@@ -4,15 +4,15 @@ import Messages from './Messages/Messages';
 import type { Dispatch, SetStateAction } from 'react';
 import IconButton from '../../components/IconButton/IconButton';
 import { IoChatboxOutline } from 'react-icons/io5';
-// import { User } from '@prisma/client';
+import { User } from '../../generated/client';
 import { trpc } from '../../utils/trpc';
 
-export interface User {
-  id: string;
-  username: string;
-  image: string;
-  name: string;
-}
+// export interface User {
+//   id: string;
+//   username: string;
+//   image: string;
+//   name: string;
+// }
 
 type PartialUser = Partial<User>;
 
