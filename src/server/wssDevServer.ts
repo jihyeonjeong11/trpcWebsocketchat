@@ -3,6 +3,8 @@ import { appRouter } from './routers/_app';
 import { applyWSSHandler } from '@trpc/server/adapters/ws';
 import ws from 'ws';
 
+console.log('devserver');
+
 const wss = new ws.Server({
   port: 3001,
 });

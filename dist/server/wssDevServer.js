@@ -7,6 +7,7 @@ const context_1 = require("./context");
 const _app_1 = require("./routers/_app");
 const ws_1 = require("@trpc/server/adapters/ws");
 const ws_2 = __importDefault(require("ws"));
+console.log('devserver');
 const wss = new ws_2.default.Server({
     port: 3001,
 });
